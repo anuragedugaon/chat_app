@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Boat</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main class="app">
+      <header class="top">
+        <div class="brand">
+          <div class="logo">CB</div>
+          <div>
+            <h1>Chat Boat</h1>
+            <p>Local LLM + Python Retrieval</p>
+          </div>
+        </div>
+        <div class="status" id="status">Checking services…</div>
+      </header>
+
+      <section class="panel">
+        <div class="chat" id="chat"></div>
+        <div class="composer">
+          <textarea id="input" rows="2" placeholder="Ask anything…"></textarea>
+          <button id="send">Send</button>
+        </div>
+      </section>
+
+      <section class="panel ingest">
+        <div class="ingest-head">
+          <h2>Knowledge Base</h2>
+          <p>Add notes to improve answers (local only).</p>
+        </div>
+        <textarea id="kb" rows="6" placeholder="Paste notes or docs here"></textarea>
+        <button id="ingest">Ingest Notes</button>
+        <div class="hint">Tip: Keep paragraphs short for better retrieval.</div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

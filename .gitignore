@@ -1,0 +1,4 @@
+node_modules/
+.env
+py_service/.venv/
+py_service/store.json
