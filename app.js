@@ -55,6 +55,8 @@ app.post("/api/chat", async (req, res) => {
     const model = process.env.OLLAMA_MODEL || "llama3.2:3b";
     console.log("[/api/chat] ollama model:", model);
 
+
+    
     const ollamaResp = await fetch("http://localhost:11434/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
